@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>    
+    <title>ABC Køreskole</title>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container flex gap-1 spcace-between align-center">
+            <div class="logo_container">
+                <a class="logo_text" href="#">ABC Køreskole</a> 
+                <svg class="logo_icon">
+                  <use xlink:href="images/logo.svg#car-steering-wheel"></use>
+                </svg>   
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <svg class="menu-icon">
+                  <use xlink:href="images/icon-menu.svg#icon-hamburger"></use>
+                </svg>
+                <!-- <img class="icon-hamburger" width="30px" src="images/icon-hamburger.svg" aria-hidden="true"> -->
+                <img class="close-icon" src="images/icon-close.svg" aria-hidden="true" alt="Menu close icon">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav id="primary-navigation" class="primary-navigation">
+                <ul aria-label="primary-nav" role='list'>
+                    <li><a class="btnCta" href="#home">Hjem</a></li>
+                    <li><a class="btnCta" href="#priser">Pakker</a></li>
+                    <li><a class="btnCta" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <input id="cta-1" type="button" class="button menu-action-button btnCta" data-type="menu-cta" value="Tilmeld">
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero hero-text">
+            <p>​VELKOMMEN TIL ABC KØRESKOLE</p>
+            <h1 class="fs-primary-heading fw-bold text-center heading-max-width">
+              FÅ KØ​REUNDERVISNING ​VED EN <span>FANTASTISK</span> KØRESKOLE
+            </h1>
+            <p class="text-max-width text-center">
+              Vi tilbyder teoriundervisninger og køretimer til personbil, 
+              trailer og motorcykel på både dansk og engelsk.
+            </p>
+            <div>
+              <button id="priceButton" class="button" data-type="price">Priser</button>
+              <button id="cta-2" class="button btnCta">Tilmeld</button>
+            </div>   
+            <img src="/images/car-steering-wheel.svg" alt="Hero Image">
+        </section>
+        <section id="priser" class="bg-section | padding-block-700  text-center">
+            <h1 class="section-title">Priser på Kørekort</h1>
+            <div class="price_card_wrapper container padding-block-700">
+                <article class="card">
+                    <div>
+                        <p class="card-title fw-bold padding-block-200">Mest Populære</p>
+                        <p class="card-sub-title fw-bold">11.999,-</p>
+                    </div>
+                    <ul role="list" class="padding-block-200">
+                        <li>Ubegrænset teoriundervisning</li>
+                        <li>4 Lektioner på manøvrebane</li>
+                        <li>16 Lektioner på vej (45min) </li>
+                        <li>5 Lektioner på glatbane</li>                
+                    </ul>
+                </article>
+                <article class="card">
+                    <div>
+                        <p class="card-title fw-bold padding-block-200">Automatgear</p>
+                        <p class="card-sub-title fw-bold">12.999,-</p>
+                    </div>
+                    <ul role="list" class="padding-block-200">                
+                        <li>Ubegrænset teoriundervisning</li>
+                        <li>4 Lektioner på manøvrebane</li>
+                        <li>16 Lektioner på vej (45min) </li>
+                        <li>5 Lektioner på glatbane</li>                
+                    </ul>
+                </article>
+                <article class="card">
+                    <div>
+                        <p class="card-title fw-bold padding-block-200">Hurtig Pakke</p>
+                        <p class="card-sub-title fw-bold">13.499,-</p>
+                    </div>
+                    <ul role="list" class="padding-block-200">
+                        <li>Vær klar til teoriprøve på 4 uger</li>
+                        <li>Ubegrænset teoriundervisning</li>
+                        <li>4 Lektioner på manøvrebane</li>
+                        <li>16 Lektioner på vej (45min) </li>
+                        <li>5 Lektioner på glatbane</li>                
+                    </ul>
+                </article>
+            </div>            
+        </section>
+          <!-- Call to action section starts -->
+        <section id="cta" class="cta | padding-block-700 bg-accent-500">
+            <div class="container">                            
+                <p class="fs-primary-heading fw-bold">Tag rattet og styr din fremtid Start din køreoplevelse i dag!</p>                                
+                <button id="cta-3" class="button btnCta" data-type="inverted">Get Started</button>                            
+            </div>
+        </section>
+        <!-- Carousel section starts -->
+        <section id="carousel" class="carousel | bg-section  padding-block-700  text-center">            
+            <h1 class="section-title container">Bestået med os, anbefalet af dem</h1>
+            <!-- Carousel here -->
+            <ul class="slider">
+                <li>
+                    <img src="../images/avatar-anisha.png" alt="">
+        
+                    <div class="slider-content">
+                    <h3 class="fw-bold">Anisha Li</h3>
+                    <p data-width="wide">“Fantastisk oplevelse! Jeg bestod min køreprøve første gang takket være deres professionelle undervisning.”</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/avatar-ali.png" alt="">
+        
+                    <div class="slider-content">
+                    <h3 class="fw-bold">Ali Bravo</h3>
+                    <p data-width="wide">“Jeg kan varmt anbefale dem! Deres erfarne instruktører og skræddersyede tilgang gjorde hele forskellen for mig.”</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/avatar-richard.png" alt="">
+        
+                    <div class="slider-content">
+                    <h3 class="fw-bold">Richard Watts</h3>
+                    <p data-width="wide">“En pålidelig køreskole med dygtige undervisere. Jeg følte mig tryg under hele forløbet og bestod med lethed!”</p>
+                    </div>
+                </li>                                  
+            </ul>
+            <!-- <button class="button">Get Started</button>         -->
+        </section>
+        <section id="kontakt" class="contact-section | padding-block-700 text-center">            
+            <h1 class="section-title">Kontakt Os</h1>            
+
+            <div class="contact-us-form-container container padding-block-700">
+                <form id="frmContact" class=" text-left" action="#" method="post">
+                <div>
+                    <label for="name">Fulde Navn</label>
+                    <input type="text" id="name" name="name" placeholder="Dit navn..">
+                </div>
+                <div>
+                    <label for="email">Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Din mail..">
+                </div>
+                <div>
+                    <label for="phone">Mobile</label>
+                    <input type="number" id="phone" name="phone" placeholder="Din mobile nummer..">                      
+                </div>
+                <div>
+                    <label for="message">Besked</label>
+                    <textarea id="message" name="message" placeholder="Skriv din besked..." rows="10"></textarea>
+                </div>
+            
+                <input class="button" type="submit" value="Submit">
+            
+                </form>
+                <img src="./images/contact-us.jpeg" alt="contact us">
+            </div>                                                     
+        </section>
+    </main>
+    <!-- Footer Starts -->
+    <footer class="bg-primary-400 text-neutral-100 padding-block-700">
+        <div class="footer container">
+            <div class="logo_container logo_area">
+                <a class="logo_text" href="#">ABC Køreskole</a> 
+                <svg class="logo_icon">
+                    <use xlink:href="images/logo.svg#car-steering-wheel"></use>
+                </svg>   
+            </div>
+            <div class="footer-nav addresses">
+                <p class="padding-block-200 fw-bold">Praktisk Information</p>
+                <address>
+                  <ul  role="list" aria-label="Contact nav">
+                    <li>
+                      <div>
+                        <svg class="footer-icon">
+                          <use xlink:href="images/contact-icons.svg#icon-map"></use>
+                        </svg>
+                        <span>
+                          <p>Hvidovrevej 538, 1th</p>
+                          <p>2650, Hvidovre</p>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <svg class="footer-icon">
+                          <use xlink:href="images/contact-icons.svg#icon-phone"></use>
+                        </svg>
+                        <p>88 76 54 38</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <svg class="footer-icon">
+                          <use xlink:href="images/email.svg#icon-email2"></use>
+                        </svg>
+                        <p>admin@abcskole.dk</p>
+                      </div>
+                    </li>
+                                                
+                  </ul>
+                </address>
+            </div>
+            <div class="footer-nav opening_hours">
+                <p class="padding-block-200 fw-bold">Åbningstider</p>
+                <table>
+                  <tr>
+                    <td>Mandag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Tirsdag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Onsdag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Torsdag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Fredag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Lørdag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                  <tr>
+                    <td>Søndag</td>
+                    <td>11:00 - 19:00</td>
+                  </tr>
+                </table>             
+            </div> 
+            <div class="footer-nav bank_info">
+                <p class="padding-block-200 fw-bold">Betaling Info</p>
+                <ul role="list" aria-label="Footer nav">
+                    <li>Reg: 0000</li>
+                    <li>Konto: 0000000000</li>                                  
+                </ul>
+            </div>  
+            <div class="social_media">
+                <p class="padding-block-200 fw-bold">Sociale Medie</p>
+                <ul role="list" class="social-list padding-block-200" aria-label="Social links">
+                  <li>
+                    <a aria-label="facebook" href="#">
+                      <svg class="footer-icon">
+                        <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a aria-label="facebook" href="#">
+                      <svg class="footer-icon">
+                        <use xlink:href="images/social-icons.svg#icon-x"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a aria-label="facebook" href="#">
+                      <svg class="footer-icon">
+                        <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a aria-label="facebook" href="#">
+                      <svg class="footer-icon">
+                        <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>                
+        </div>
+        <p class="copywrite">&copy; 2024 ABCkøreskole.dk. All rights reserved.</p>
+    </footer>
+  
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+</body>
+</html>
